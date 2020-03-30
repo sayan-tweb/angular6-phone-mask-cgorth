@@ -1,0 +1,17 @@
+<div class="container mt-5 mb-5 pl-5 ">
+	<div class="row">
+	 <form [formGroup]="form">
+
+<div class="form-group">
+    <label for="phone-number">Phone Number</label>
+    
+    <input class="form-control"  type="text" appPhoneMask 
+    maxlength=14 formControlName="phone" id="phone-number"  pattern="^\([0-9]{3}\)\s[0-9]{3}-[0-9]{4}$"> 
+  </div>
+  {{phone.value}}
+  {{errors}}
+
+
+  </form>
+	</div>
+</div>
